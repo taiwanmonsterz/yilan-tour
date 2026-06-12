@@ -147,6 +147,7 @@
   .c-guide{--spine:var(--teal)}
   .c-audio{--spine:var(--amber)}
   .c-mbti {--spine:var(--gold)}
+  .c-chat {--spine:var(--rust)}
   .c-mbti{background:linear-gradient(180deg,#fff 0%,#fbf6ec 100%);border:1.5px solid var(--gold)}
   .badge-best{
     display:inline-block;background:var(--gold);color:#fff;
@@ -157,6 +158,24 @@
   .embed-frame{margin:18px 20px 0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--paper-2)}
   .embed-frame iframe{display:block;width:100%;height:62vw;max-height:440px;min-height:300px;border:0}
   .embed-note{padding:12px 20px 24px;font-size:12px;color:var(--ink-soft)}
+
+  /* ── 셔틀챗 안내 ── */
+  .chat-points{list-style:none;margin:14px 0 4px;display:flex;flex-direction:column;gap:9px}
+  .chat-points li{position:relative;padding-left:20px;font-size:13.5px;line-height:1.55;color:var(--ink-soft)}
+  .chat-points li::before{content:"";position:absolute;left:2px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--rust)}
+  .chat-points li b{color:var(--ink);font-weight:700}
+  .howto{
+    margin:16px 0 4px;border:1px solid var(--line);border-radius:6px;
+    background:var(--paper-2);overflow:hidden;
+  }
+  .howto-head{
+    font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+    color:#fff;background:var(--rust);padding:8px 14px;
+  }
+  .howto-body{padding:12px 14px;display:flex;flex-direction:column;gap:11px}
+  .howto-os{font-size:13px;line-height:1.5;color:var(--ink-soft)}
+  .howto-os b{display:block;color:var(--ink);font-weight:700;margin-bottom:3px;font-size:12.5px}
+  .howto-os .step{color:var(--rust);font-weight:700}
 
   /* ── 쿠폰 FAB ── */
   .coupon-fab{
@@ -311,6 +330,41 @@
         <div class="card-body">
           <p>몇 가지 질문에 답하면, 증류소에 도착하자마자 당신에게 가장 잘 맞는 카발란 라인과 시음 순서를 알려드립니다. 시음은 한 번뿐, 미리 정해두고 떠나세요.</p>
           <a class="btn" href="https://taiwanmonsterz.github.io/kavalan-mbti/" id="mbtiLink">취향 진단 시작하기 <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="card c-chat reveal">
+        <div class="card-top">
+          <div class="num">04</div>
+          <div class="card-head">
+            <span class="badge-best">투어 필수</span>
+            <div class="card-kicker">Tour Messenger</div>
+            <h2>투어 전용 메신저</h2>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>투어 당일의 모든 안내와 공지는 <b>전용 메신저</b>로 전달됩니다. 집합 시간·장소 변경, 실시간 안내를 놓치지 않으려면 출발 전 미리 입장해 주세요.</p>
+          <ul class="chat-points">
+            <li><b>예약하신 투어 채널</b>로 입장하시면 됩니다.</li>
+            <li>가이드 안내와 <b>공지사항</b>이 실시간으로 올라옵니다.</li>
+            <li>궁금한 점은 메신저로 바로 문의하실 수 있습니다.</li>
+          </ul>
+
+          <div class="howto">
+            <div class="howto-head">홈 화면에 추가하기 (알림 받기)</div>
+            <div class="howto-body">
+              <div class="howto-os">
+                <b>iPhone (Safari)</b>
+                하단 <span class="step">공유 버튼</span> → <span class="step">홈 화면에 추가</span> → <span class="step">추가</span>
+              </div>
+              <div class="howto-os">
+                <b>Android (Chrome)</b>
+                우측 상단 <span class="step">⋮ 메뉴</span> → <span class="step">홈 화면에 추가</span> → <span class="step">설치</span>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn" href="https://taiwanmonsterz.github.io/shuttle-chat/" target="_blank" rel="noopener">전용 메신저 입장하기 <span class="arrow">→</span></a>
         </div>
       </article>
 
